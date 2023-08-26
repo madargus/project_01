@@ -23,7 +23,7 @@ def quarter_of(month):
     }
     if 1 <= month <= 3:
         return f"месяц {month} ({months[month]}) яавляется частью первого квартала"
-    elif 4<= month <= 6:
+    elif 4 <= month <= 6:
         return f"месяц {month} ({months[month]}) яавляется частью второго квартала"
     elif 7 <= month <= 9:
         return f"месяц {month} ({months[month]}) яавляется частью третьего квартала"
@@ -31,6 +31,7 @@ def quarter_of(month):
         return f"месяц {month} ({months[month]}) яавляется частью четвёртого квартала"
     else:
         return "Номер месяца введён некорректно. Попробуйте ещё раз"
+
 
 month = int(input("Введите номер месяца: "))
 print(quarter_of(month))
